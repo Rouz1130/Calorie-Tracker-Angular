@@ -14,20 +14,14 @@ import { MealComponent } from './meal/meal.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
-import {ErrorComponent} from './error.component';
+
 
 import { CompletenessPipe } from './completeness.pipe';
 
 
 import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';
-import { LoginComponent } from './login/login.component';
 
 
-const appRoutes: Routes = [
-
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
-
-];
 
 @NgModule({
   declarations: [
@@ -38,8 +32,8 @@ const appRoutes: Routes = [
     EditMealComponent,
     MealListComponent,
     ToobarMultirowComponent,
-    LoginComponent,
-    ErrorComponent
+
+ 
   ],
   imports: [
     BrowserModule,
@@ -48,9 +42,9 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    RouterModule.forRoot(appRoutes,)
+
   ],
-  entryComponents: [ErrorComponent],
+
   providers: [],
   bootstrap: [AppComponent]
 })
