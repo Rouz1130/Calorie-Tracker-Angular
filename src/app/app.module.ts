@@ -6,6 +6,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
 import { MealComponent } from './meal/meal.component';
@@ -32,7 +33,8 @@ import { MealListComponent } from './meal-list/meal-list.component';
     MatCheckboxModule,
     MatStepperModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
