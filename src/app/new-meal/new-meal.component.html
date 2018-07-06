@@ -1,3 +1,18 @@
-<p>
-  new-meal works!
-</p>
+<h1>New Meal</h1>
+<div>
+  <label class="name">Enter Meal Description:</label>
+</div>
+<div>
+  <form class="add-new-meal">
+    <label class="name" for="">Name:</label>
+    <input class="form-group" type="text" name="name" value="" #newName>
+    <label class="name " for="name">Description:</label>
+    <input class="form-group" type="text" name="name" value="" #newDescription>
+    <label class="name" for="">Calories:</label>
+    <input class="form-group" type="text" name="name" value="" #newCalories>
+    <button class="btn btn-warning btn-md" (click)="
+    addClicked(newName.value,newDescription.value ,newCalories.value);
+    newName.value='';
+    newDescription.value='';
+    newCalories.value='';
+  ">Add</button>
