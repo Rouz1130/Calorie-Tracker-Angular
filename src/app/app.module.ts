@@ -6,9 +6,10 @@ import {MatButtonModule, MatCheckboxModule, MatCheckbox} from '@angular/material
 import { AppComponent } from './app.component';
 import { MealComponent } from './meal/meal.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
-import { NewComponent } from './new/new.component';
+
 import { CompletenessPipe } from './completeness.pipe';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
+import { MealListComponent } from './meal-list/meal-list.component';
 
 
 @NgModule({
@@ -16,9 +17,9 @@ import { EditMealComponent } from './edit-meal/edit-meal.component';
     AppComponent,
     MealComponent,
     NewMealComponent,
-    NewComponent,
     CompletenessPipe,
-    EditMealComponent
+    EditMealComponent,
+    MealListComponent
   ],
   imports: [
     BrowserModule,
