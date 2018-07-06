@@ -6,7 +6,11 @@ import {
   MatToolbarModule,
   MatSelectModule,
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatListModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatDividerModule
 }
   from '@angular/material';
 import { MatStepperModule } from '@angular/material/stepper';
@@ -45,6 +49,10 @@ import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.compo
     MatCardModule,
     MatSelectModule,
     MatIconModule,
+    MatListModule,
+    
+    MatFormFieldModule,
+    MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule
