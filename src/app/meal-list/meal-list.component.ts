@@ -1,5 +1,6 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { Meal } from '../meal.model';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'meal-list',
@@ -7,18 +8,17 @@ import { Meal } from '../meal.model';
   styleUrls: ['./meal-list.component.css']
 })
 export class MealListComponent {
+  calorieIntake = new FormControl();
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
-  selectedCompleteness: string = "notDone";
+ selectedCompleteness: string = "notDone";
 
-
-  onChange(optionsForMenu) {
-    this.selectedCompleteness = optionsForMenu;
-    console.log('this.selectedCompletness');
-  } 
+  onChange(optionFromMenu) {
+    this.selectedCompleteness = optionFromMenu;
+    console.log(this.selectedCompleteness);
+  }
 
   editButtonHasBeenClicked(mealToEdit: Meal) {
     this.clickSender.emit(mealToEdit);
   }
-
 }

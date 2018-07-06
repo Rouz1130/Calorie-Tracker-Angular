@@ -1,8 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {MatButtonModule, MatCheckboxModule, MatCheckbox, MatToolbarModule, MatToolbar} from '@angular/material';
-import {MatStepperModule} from '@angular/material/stepper';
+import {
+  MatButtonModule, MatCheckboxModule,
+  MatToolbarModule,
+  MatSelectModule,
+  MatCardModule
+}
+  from '@angular/material';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -34,8 +40,9 @@ import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.compo
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatStepperModule,
     MatToolbarModule,
+    MatCardModule,
+    MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule

@@ -1,8 +1,13 @@
-<select class="col-xs-3" (change)="onChange($event.target.value)">
-  <option class="namel" value="all">Show All</option>
-  <option class="namel" value="isUnder500">Show under 500</option>
-  <option class="namel" value="isOver500" selected="selected">Show over 500</option>
-</select>
+<mat-card>
+  <mat-form-field>
+    <P>Calorie amout options</P>
+    <mat-select class="col-xs-3" [(value)]="selectedCompleteness">
+      <mat-option value="all">Show All</mat-option>
+      <mat-option value="isOver500">Over 500</mat-option>
+      <mat-option value="isUnder500">Under 500</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>
 <br>
 <div *ngFor="let currentMeal of childMealList | completeness:selectedCompleteness">
   <meal-display [meal]="currentMeal"></meal-display>
@@ -12,4 +17,4 @@
     <input [(ngModel)]="currentMeal.description">
     <input [(ngModel)]="currentMeal.calories" type="number" aria-label="amount">
   </form>
-  <button class="btn btn-warning btn-md" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+  <button class="btn btn-warning btn-mat" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
