@@ -28,6 +28,7 @@ import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 
 import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.compo
     CompletenessPipe,
     EditMealComponent,
     MealListComponent,
-    ToobarMultirowComponent
+    ToobarMultirowComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
