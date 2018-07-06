@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from  '@angular/router';
 
 
 
@@ -22,6 +23,12 @@ import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.compo
 import { LoginComponent } from './login/login.component';
 
 
+const appRoutes: Routes = [
+
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,8 +47,10 @@ import { LoginComponent } from './login/login.component';
     MyMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot(appRoutes,)
   ],
+  entryComponents: [ErrorComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
