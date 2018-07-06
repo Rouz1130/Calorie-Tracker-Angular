@@ -3,7 +3,7 @@ import { Meal } from './meal.model';
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -17,7 +17,7 @@ export class AppComponent {
 
   selectedMeal: Meal = null;
 
-  ShowDetails(clickedMeal: Meal) {
+  showDetails(clickedMeal: Meal) {
     this.selectedMeal = clickedMeal;
   }
 
