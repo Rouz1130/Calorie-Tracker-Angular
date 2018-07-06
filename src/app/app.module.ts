@@ -8,6 +8,7 @@ import { MealComponent } from './meal/meal.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
 import { NewComponent } from './new/new.component';
 import { CompletenessPipe } from './completeness.pipe';
+import { EditMealComponent } from './edit-meal/edit-meal.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CompletenessPipe } from './completeness.pipe';
     MealComponent,
     NewMealComponent,
     NewComponent,
-    CompletenessPipe
+    CompletenessPipe,
+    EditMealComponent
   ],
   imports: [
     BrowserModule,
