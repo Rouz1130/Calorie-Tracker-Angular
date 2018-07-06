@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {MatButtonModule, MatCheckboxModule, MatCheckbox} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatCheckbox, MatToolbarModule, MatToolbar} from '@angular/material';
 import {MatStepperModule} from '@angular/material/stepper';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +16,8 @@ import { CompletenessPipe } from './completeness.pipe';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 
+import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MealListComponent } from './meal-list/meal-list.component';
     NewMealComponent,
     CompletenessPipe,
     EditMealComponent,
-    MealListComponent
+    MealListComponent,
+    ToobarMultirowComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { MealListComponent } from './meal-list/meal-list.component';
     MatButtonModule,
     MatCheckboxModule,
     MatStepperModule,
+    MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule
