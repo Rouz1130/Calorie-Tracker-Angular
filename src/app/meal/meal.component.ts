@@ -3,7 +3,7 @@ import { Meal } from '../meal.model';
 
 
 @Component({
-  selector: 'app-meal',
+  selector: 'meal-display',
   templateUrl: './meal.component.html',
   styleUrls: ['./meal.component.css']
 })
