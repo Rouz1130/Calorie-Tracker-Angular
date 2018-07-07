@@ -1,47 +1,63 @@
-<h1>Enter Meal</h1>
-<div>
-  <label class="name">Enter Meal Description:</label>
-</div>
+<br/>
+<br/>
+<br/>
 <mat-card>
   <mat-card-content>
-      <div class="mat-form">
-          <form class="add-new-meal">
-              <label class="name" for="">Name:</label>
-              <input class="form-group" type="text" name="name" value="" #newName>
-              <label class="name " for="name">Description:</label>
-              <input class="form-group" type="text" name="name" value="" #newDescription>
-              <label class="name" for="">Calories:</label>
-              <input class="form-group" type="text" name="name" value="" #newCalories> 
-              <button mat-raised-button color="success"  (click)="
+      <h2>Add Meal</h2>
+    <div class="mat-form">
+      <!-- <h2>Add Meal</h2> -->
+      <!-- <br/> -->
+      <!-- <label>Enter Meal Description:</label> -->
+      <form class="add-new-meal">
+        <label class="name" for="">Name:</label>
+        &nbsp;
+        <input placeholder="food name" class="form-group" type="text" name="name" value="" #newName> &nbsp;
+        <label class="name " for="name">Description:</label>
+        &nbsp;
+        <input placeholder="food description" class="form-group" type="text" name="name" value="" #newDescription> &nbsp;
+        <label class="name" for="">Calories:</label>
+        &nbsp;
+        <input placeholder="calories amount" class="form-group" type="text" name="name" value="" #newCalories> &nbsp; &nbsp;
+        <button mat-raised-button color="success" (click)="
               addClicked(newName.value,newDescription.value ,newCalories.value);
               newName.value='';
               newDescription.value='';
               newCalories.value='';
             ">Add</button>
-          </form>
-        </div>
+      </form>
+    </div>
   </mat-card-content>
 </mat-card>
-<!-- <div class="mat-form">
-    <form class="add-new-meal">
-    <label class="name" for="">Name:</label>
-    <input class="form-group" type="text" name="name" value="" #newName>
-    </form>
-  </div> -->
 
 
+<!--optiton select within card example leave uncommented for future use -->
+<!-- 
+<mat-card> -->
+  <!-- <mat-card-content>
+      <mat-form-field class="add-new-meal">
+          <mat-select placeholder="Calorie amount" value="" class="form-group">
 
-<!-- <div>
-  <form class="add-new-meal">
-    <label class="name" for="">Name:</label>
-    <input class="form-group" type="text" name="name" value="" #newName>
-    <label class="name " for="name">Description:</label>
-    <input class="form-group" type="text" name="name" value="" #newDescription>
-    <label class="name" for="">Calories:</label>
-    <input class="form-group" type="text" name="name" value="" #newCalories> -->
-    <!-- <button mat-raised-button color="success"  (click)="
-    addClicked(newName.value,newDescription.value ,newCalories.value);
-    newName.value='';
-    newDescription.value='';
-    newCalories.value='';
-  ">Add</button> -->
+            <mat-label class="add-new-meal"  value="">
+                <input placeholder="food name" class="form-group" type="text" name="name" value="" #newName>
+            </mat-label>
+            &nbsp;
+            &nbsp;
+
+            <mat-label class="add-new-meal"  value="">
+                <input placeholder="food description" class="form-group" type="text" name="name" value="" #newDescription>
+            </mat-label>
+            &nbsp;
+            &nbsp;
+
+            <mat-label class="add-new-meal"  value="">
+                <input placeholder="calorie amount" class="form-group" type="text" name="name" value="" #newCalories>
+            </mat-label>
+            &nbsp;
+            &nbsp;
+
+            <mat-option></mat-option>
+            <mat-option></mat-option>
+          </mat-select>
+        </mat-form-field>
+  </mat-card-content>
+</mat-card> -->

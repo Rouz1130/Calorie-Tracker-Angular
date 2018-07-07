@@ -9,3 +9,29 @@ button {
     background-color: green;
     color: #fff;
 }
+
+.form-group {
+width: 20em;
+height: 2em;
+}
+
+h2 {
+   /* background-color: f38384; */
+   color:#757de8;
+   font-family: 'Roboto', 'Open Sans';
+   
+}
+
+.mat-form, mat-card,mat-card-content { 
+    background-color: #f8f8ff;
+    box-shadow: 0 0 5px #f8f8ff, 0 0 10px #f8f8ff,
+             0 0 20px 
+             #f8f8ff, 0 0 30px
+             #f8f8ff,
+             0 0 40px
+             #f8f8ff;
+}
+
+/* .mat-form {
+    box-shadow: 10px 10px 5px grey;
+} */
