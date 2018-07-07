@@ -1,27 +1,32 @@
-# MealTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+# Meal-Tracker Angular 5
 
-## Development server
+####  Responsive application allows users to track meals and calorie intake
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+A remake of a project that I created with the relase of Angular 2 in 2016. This version is done in Angular 5 with heavy focus on Angular Material. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Users are able to log their daily meals, including details pertaning to thier meal. You may assume foods being logged are for a single day (you are not required to keep track of multiple days' meals).
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup/Installation Requirements
 
-## Running unit tests
+* _Clone repository. Then locate top folder directory in command line_
+* Run `npm install` to install packages.
+* Run `bower ng serve` to start the server on port 4200.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and contact details
+www.rouzm.com
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
++ Angular 5, TypeScript, HTML5, Scss, Angular-CLI, Angular Material
++ Node, npm
 
-## Further help
+### License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2016 **_Rouz Majlessi_**
+July 6, 2018&nbsp; 
+<br/>
+www.rouzm.com
