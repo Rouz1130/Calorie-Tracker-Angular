@@ -16,6 +16,8 @@ import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { MealListComponent } from './meal-list/meal-list.component';
 
 
+
+
 import { CompletenessPipe } from './completeness.pipe';
 
 
@@ -42,10 +44,12 @@ import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.compo
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+ 
 
   ],
 
   providers: [],
+  entryComponents: [EditMealComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
