@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from  '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -14,10 +13,10 @@ import { MealComponent } from './meal/meal.component';
 import { NewMealComponent } from './new-meal/new-meal.component';
 import { EditMealComponent } from './edit-meal/edit-meal.component';
 import { MealListComponent } from './meal-list/meal-list.component'
-import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';;
-
+import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';
 
 import { CompletenessPipe } from './completeness.pipe';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { CompletenessPipe } from './completeness.pipe';
     ToobarMultirowComponent,
   ],
   imports: [
-
     BrowserModule,
     BrowserAnimationsModule,
     MyMaterialModule,

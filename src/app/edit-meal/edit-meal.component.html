@@ -1,52 +1,26 @@
-
-<!-- <div *ngIf="childSelectedMeal">
-  <h1>Edit Meal</h1>
-  <div>
-    <label class="name">Enter Meal Name:</label>
-    <input [(ngModel)]="childSelectedMeal.name">
-  </div>
-  <div>
-    <label class="name">Enter Meal Description:</label>
-    <input [(ngModel)]="childSelectedMeal.description">
-  </div>
-  <div>
-    <label class="name">Enter Meal Calories:</label>
-    <input [(ngModel)]="childSelectedMeal.calories">
-  </div>
-  <button mat-raised-button color="success" (click)="doneClicked()">Done</button>
-</div> -->
-
-  
 <form>
-    <div *ngIf="childSelectedMeal">
-      <h3 class="active">EDIT</h3>
-      <br/>
-      <br/> 
+  <div *ngIf="childSelectedMeal">
+    <h3 class="active">EDIT</h3>
+    <br/>
+    <br/>
     <div class="group">
-        <input [(ngModel)]="childSelectedMeal.name" [ngModelOptions]="{standalone:true}">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Enter meal:</label>
+      <input [(ngModel)]="childSelectedMeal.name" [ngModelOptions]="{standalone:true}">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Enter meal:</label>
     </div>
     <div class="group">
-        <input [(ngModel)]="childSelectedMeal.description" [ngModelOptions]="{standalone:true}">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Enter name:</label>
+      <input [(ngModel)]="childSelectedMeal.description" [ngModelOptions]="{standalone:true}">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Enter name:</label>
     </div>
     <div class="group">
-        <input [(ngModel)]="childSelectedMeal.calories" [ngModelOptions]="{standalone:true}">
-        <span class="highlight"></span>
-        <span class="bar"></span>
-        <label>Enter calories:</label>
+      <input [(ngModel)]="childSelectedMeal.calories" [ngModelOptions]="{standalone:true}">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Enter calories:</label>
     </div>
     <button mat-raised-button color="success" (click)="doneClicked()">Done</button>
-  </div> 
-    </form>
-
-
-
-
-
-
-
+  </div>
+</form>

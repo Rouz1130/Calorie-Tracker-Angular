@@ -8,22 +8,19 @@ import { Meal } from './meal.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-
+  selectedMeal: Meal = null;
 
   masterMealList: Meal[] = [
-    new Meal("Hamburger", "foodDescription1", 498),
-    new Meal("Pizza slice", "foodDescription2", 499),
-    new Meal("Bacon & eggs", "foodDescription3", 501),
-    new Meal("thai food", "foodDescription4", 502),
+    new Meal("Apple-Cinnamon Quinoa Bowl", "Grains, apples, cinnamin", 307),
+    new Meal("Pasta", "Zucchini Noodles with Avocado Pesto & Shrimp ", 515),
+    new Meal("Balsamic Chicken", "Paprika, rosemary chicken", 280),
+    new Meal("Mac and Cheese", "King ranh and Chicken", 650),
   ];
-  selectedMeal: Meal = null;
 
   showDetails(clickedMeal: Meal) {
     this.selectedMeal = clickedMeal;
   }
 
-  //edit meal component method in that template
   finishedEditing() {
     this.selectedMeal = null;
   }

@@ -1,21 +1,17 @@
-<!-- <mat-card> -->
 <mat-form-field>
-  <mat-select placeholder="Calorie amount" [(value)]="selectedCompleteness">
+  <mat-select placeholder="filter calories" [(value)]="selectedCompleteness">
     <mat-option value="all">Show All</mat-option>
     <mat-option value="isOverng500">Over 500</mat-option>
     <mat-option value="isUnder500">Under 500</mat-option>
   </mat-select>
 </mat-form-field>
-<!-- </mat-card> -->
 <br/>
 <div *ngFor="let currentMeal of childMealList | completeness:selectedCompleteness">
   <meal-display [meal]="currentMeal"></meal-display>
   <h3>{{currentMeal.name}} | {{currentMeal.description}} | {{currentMeal.calories}}</h3>
-
   <mat-form-field *ngIf="currentMeal === selectedMeal">
     <input mat-input [(ngModel)]="currentMeal.name">
     <input mat-input [(ngModel)]="currentMeal.description">
     <input mat-input [(ngModel)]="currentMeal.calories" type="number" aria-label="amount">
   </mat-form-field>
-
-  <button mat-raised-button color="primary" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+  <button mat-raised-button color="primary-variant" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>

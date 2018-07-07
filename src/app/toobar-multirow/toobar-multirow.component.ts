@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./toobar-multirow.component.scss']
 })
 export class ToobarMultirowComponent {
-
-  constructor() { }
 }

@@ -1,7 +1,7 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { Meal } from '../meal.model';
-import {FormControl} from '@angular/forms';
-import {MatDialog, MatDialogConfig} from "@angular/material";
+import { FormControl } from '@angular/forms';
+import { MatDialog, MatDialogConfig } from "@angular/material";
 
 @Component({
   selector: 'meal-list',
@@ -12,8 +12,7 @@ export class MealListComponent {
   calorieIntake = new FormControl();
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
- selectedCompleteness: string = "notDone";
- 
+  selectedCompleteness: string = "notDone";
 
   onChange(optionFromMenu) {
     this.selectedCompleteness = optionFromMenu;

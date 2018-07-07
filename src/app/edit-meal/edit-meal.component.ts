@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Meal } from '../meal.model';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { Meal } from '../meal.model'; 
 
 @Component({
   selector: 'edit-meal',
@@ -8,15 +7,10 @@ import {MatExpansionModule} from '@angular/material/expansion';
   styleUrls: ['./edit-meal.component.scss']
 })
 export class EditMealComponent {
-  panelOpenState = false;
-  
-  constructor() {}
-
-
   @Input() childSelectedMeal: Meal;
   @Output() doneClickedSender = new EventEmitter();
-  
-  
+
+
   doneClicked() {
     this.doneClickedSender.emit();
   }

@@ -14,7 +14,7 @@
         <input placeholder="food description" class="form-group" type="text" name="name" value="" #newDescription> &nbsp;
         <label class="name" for="">Calories:</label>
         &nbsp;
-        <input placeholder="calories amount" class="form-group" type="text" name="name" value="" #newCalories> &nbsp; &nbsp;
+        <input placeholder="calories amount" class="form-group" type="text" name="name" value="" #newCalories> &nbsp; &nbsp; 
         <button mat-raised-button color="success" (click)="
               addClicked(newName.value,newDescription.value ,newCalories.value);
               newName.value='';
@@ -25,36 +25,3 @@
     </div>
   </mat-card-content>
 </mat-card>
-
-
-<!--optiton select within card example leave uncommented for future use -->
-<!-- 
-<mat-card> -->
-<!-- <mat-card-content>
-      <mat-form-field class="add-new-meal">
-          <mat-select placeholder="Calorie amount" value="" class="form-group">
-
-            <mat-label class="add-new-meal"  value="">
-                <input placeholder="food name" class="form-group" type="text" name="name" value="" #newName>
-            </mat-label>
-            &nbsp;
-            &nbsp;
-
-            <mat-label class="add-new-meal"  value="">
-                <input placeholder="food description" class="form-group" type="text" name="name" value="" #newDescription>
-            </mat-label>
-            &nbsp;
-            &nbsp;
-
-            <mat-label class="add-new-meal"  value="">
-                <input placeholder="calorie amount" class="form-group" type="text" name="name" value="" #newCalories>
-            </mat-label>
-            &nbsp;
-            &nbsp;
-
-            <mat-option></mat-option>
-            <mat-option></mat-option>
-          </mat-select>
-        </mat-form-field>
-  </mat-card-content>
-</mat-card> -->

@@ -6,29 +6,51 @@ button {
     color: whitesmoke;
 }
 .mat-success {
-    background-color: green;
-    color: #fff;
+  background-color: green;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.form-group{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-.form-group {
-width: 10em;
-height: 2em;
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 h2 {
    /* background-color: f38384; */
-   color: green;
+   color: #018786;
    font-family: 'Roboto', 'Open Sans';
-   font-size: 2em;
-   
+   font-size: 2em; 
 }
-
 :root {
     --spacing: 1rem;
     --imgWidth: 100px;
     --imgHeight: 100px;
   }
-  
   @mixin shadow($level: 1, $background: black) {
          @if $level == 1 { box-shadow: 0 1px   3px rgba(0,0,0,0.12), 0   1px 2px rgba($background,0.24) }
     @else if $level == 2 { box-shadow: 0 3px   6px rgba(0,0,0,0.16), 0   3px 6px rgba($background,0.23) }
@@ -36,7 +58,6 @@ h2 {
     @else if $level == 4 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba($background,0.22) }
     @else if $level == 5 { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba($background,0.22) }
   }
-  
    mat-card {
     @include shadow(1);
     // focus isn't going to be visible unless it has an href or a tabindex
@@ -49,14 +70,12 @@ h2 {
       transform: translateY(-2px);
     } 
   }
-  
   // Vanity styles
   mat-card {
     background: #f9f9f9;
     margin: 3rem 2rem;
     font-family: "Roboto", sans-serif;
   }
-  
 .name {
     font-family: 'Roboto', 'Open Sans';
     color: black;
