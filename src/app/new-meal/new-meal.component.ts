@@ -4,7 +4,7 @@ import { Meal } from '../meal.model';
 @Component({
   selector: 'new-meal',
   templateUrl: './new-meal.component.html',
-  styleUrls: ['./new-meal.component.css']
+  styleUrls: ['./new-meal.component.scss']
 })
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();

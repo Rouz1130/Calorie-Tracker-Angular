@@ -6,7 +6,7 @@ import {MatDialog, MatDialogConfig} from "@angular/material";
 @Component({
   selector: 'meal-list',
   templateUrl: './meal-list.component.html',
-  styleUrls: ['./meal-list.component.css']
+  styleUrls: ['./meal-list.component.scss']
 })
 export class MealListComponent {
   calorieIntake = new FormControl();

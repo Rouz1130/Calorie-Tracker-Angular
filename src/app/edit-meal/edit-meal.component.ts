@@ -5,7 +5,7 @@ import { Meal } from '../meal.model';
 @Component({
   selector: 'edit-meal',
   templateUrl: './edit-meal.component.html',
-  styleUrls: ['./edit-meal.component.css']
+  styleUrls: ['./edit-meal.component.scss']
 })
 export class EditMealComponent {
   @Input() childSelectedMeal: Meal;
