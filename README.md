@@ -18,7 +18,7 @@ www.rouzm.com
 
 ## Technologies Used
 
-+ Angular 5, TypeScript, HTML5, Scss, Angular-CLI, Angular Material
++ Angular 5, TypeScript, HTML5, Scss, Angular-CLI, Angular Material, Firebase
 + Node, npm
 
 ### License
