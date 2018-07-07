@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Meal } from './meal.model';
-import {MatDialog, MatDialogConfig} from "@angular/material";
 
 
 @Component({
@@ -15,8 +14,6 @@ export class AppComponent {
     new Meal("Bacon & eggs", "foodDescription3", 501),
     new Meal("thai food", "foodDescription4", 502),
   ];
-  
-  constructor(private dialog: MatDialog) {}
 
   selectedMeal: Meal = null;
 

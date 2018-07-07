@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
 import { Meal } from '../meal.model';
 
 
@@ -14,7 +13,4 @@ export class EditMealComponent {
   doneClicked() {
     this.doneClickedSender.emit();
   }
-
-
-  }
-
+}
