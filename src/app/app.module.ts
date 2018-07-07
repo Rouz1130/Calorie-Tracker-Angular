@@ -7,6 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MyMaterialModule } from './material.module';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+
 // Components 
 import { AppComponent } from './app.component';
 import { MealComponent } from './meal/meal.component';
@@ -16,6 +21,13 @@ import { MealListComponent } from './meal-list/meal-list.component'
 import { ToobarMultirowComponent } from './toobar-multirow/toobar-multirow.component';
 
 import { CompletenessPipe } from './completeness.pipe';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -27,6 +39,7 @@ import { CompletenessPipe } from './completeness.pipe';
     EditMealComponent,
     MealListComponent,
     ToobarMultirowComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -35,6 +48,8 @@ import { CompletenessPipe } from './completeness.pipe';
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
 
   providers: [],
