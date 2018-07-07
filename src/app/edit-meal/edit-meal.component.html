@@ -1,5 +1,5 @@
 
-<div *ngIf="childSelectedMeal">
+<!-- <div *ngIf="childSelectedMeal">
   <h1>Edit Meal</h1>
   <div>
     <label class="name">Enter Meal Name:</label>
@@ -14,41 +14,39 @@
     <input [(ngModel)]="childSelectedMeal.calories">
   </div>
   <button mat-raised-button color="success" (click)="doneClicked()">Done</button>
-</div>
+</div> -->
 
-
-
-<!-- <mat-card>
-  <mat-card-content>
-      <mat-form-field>
-
-          <mat-select placeholder="Calorie amount" [(value)]="selectedCompleteness">
-            <mat-option value="all">Show All</mat-option>
-            <mat-option value="isOverng500">Over 500</mat-option>
-            <mat-option value="isUnder500">Under 500</mat-option>
-          </mat-select>
-
-
-        </mat-form-field>
-  </mat-card-content>
-</mat-card> -->
-
-
-
-<h2 mat-dialog-title>{{description}}</h2>
-
-<mat-dialog-content [formGroup]="form">
   
-    <mat-form-field>
-        <input matInput
-                placeholder="Course Description"
-               formControlName="description">
-    </mat-form-field>
-      ....
- 
-</mat-dialog-content>
+<form>
+    <div *ngIf="childSelectedMeal">
+      <h3 class="active">EDIT</h3>
+      <br/>
+      <br/> 
+    <div class="group">
+        <input [(ngModel)]="childSelectedMeal.name" [ngModelOptions]="{standalone:true}">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Enter meal:</label>
+    </div>
+    <div class="group">
+        <input [(ngModel)]="childSelectedMeal.description" [ngModelOptions]="{standalone:true}">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Enter name:</label>
+    </div>
+    <div class="group">
+        <input [(ngModel)]="childSelectedMeal.calories" [ngModelOptions]="{standalone:true}">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Enter calories:</label>
+    </div>
+    <button mat-raised-button color="success" (click)="doneClicked()">Done</button>
+  </div> 
+    </form>
 
-<mat-dialog-actions>
-    <button class="mat-raised-button"(click)="close()">Close</button>
-    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
-</mat-dialog-actions>
+
+
+
+
+
+

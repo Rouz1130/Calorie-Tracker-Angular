@@ -1,11 +1,14 @@
 <toobar-multirow></toobar-multirow>
 <br/>
+<br/>
 <div class="basic-container">
   <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="15px" class="main-div">
     <mat-card  class="z-depth center" flex="50">
       <mat-card-content>
         <div class="container">
           <meal-list [childMealList]="masterMealList" (clickSender)="showDetails($event)"></meal-list>
+          <br/>
+          <br/>
           <edit-meal [childSelectedMeal]="selectedMeal" (doneClickedSender)="finishedEditing()"></edit-meal>
           <new-meal (newMealSender)="addMeal($event)"></new-meal>
         </div>
