@@ -5,7 +5,7 @@
 
 ## Description
 
-A remake of a project that I created with the relase of Angular 2 in 2016. This version is done in Angular 5 with heavy focus on Angular Material. Users are able to log their daily meals, including details pertaning to thier meal. You may assume foods being logged are for a single day (you are not required to keep track of multiple days' meals).
+A remake of a project that I created with the release of Angular 2 in 2016. This version is done in Angular 5 with heavy focus on Angular Material. Users are able to log their daily meals, including details pertaning to thier meal. You may assume foods being logged are for a single day (you are not required to keep track of multiple days' meals).
 
 ## Setup/Installation Requirements
 
